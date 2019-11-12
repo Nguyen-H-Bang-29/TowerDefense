@@ -33,8 +33,12 @@ public class BoardPanel extends JPanel {
             for (int j = 0; j < 8; j++) {
                 if (Model.mapMatrix[i][j] == 0) {
                     Model.mapRenderMatrix[i][j] = Model.loadImage("graphics/SandTile.png");
-                } else {
-                    Model.mapRenderMatrix[i][j] = Model.loadImage("graphics/BluePathTileGraphic.png");
+                } else if(Model.mapMatrix[i][j] == 1){
+                    Model.mapRenderMatrix[i][j] = Model.loadImage("graphics/WaterTile.png");
+                } else if(Model.mapMatrix[i][j] == 3){
+                    Model.mapRenderMatrix[i][j] = Model.loadImage("graphics/PalmTile.png");
+                } else if(Model.mapMatrix[i][j] == 4){
+                    Model.mapRenderMatrix[i][j] = Model.loadImage("graphics/RockTile.png");
                 }
             }
         }

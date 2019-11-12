@@ -65,13 +65,13 @@ public class GamePanel extends JPanel {
         this.selectedTower = selectedTower;
         switch (selectedTower){
             case basic:
-                basicTowerIcon = Model.loadIconLabel("graphics/BrickTile.png", 10,200, 75, 75);
+                basicTowerIcon = Model.loadIconLabel("graphics/BasicTowerSelected.png", 10,200, 75, 75);
                 break;
             case freezer:
-                freezerTowerIcon =  Model.loadIconLabel("graphics/BrickTile.png", 10, 300, 75, 75);
+                freezerTowerIcon =  Model.loadIconLabel("graphics/BasicTowerSelected.png", 10, 300, 75, 75);
                 break;
             case sniper:
-                sniperTowerIcon =  Model.loadIconLabel("graphics/BrickTile.png", 10, 400, 75, 75);
+                sniperTowerIcon =  Model.loadIconLabel("graphics/BasicTowerSelected.png", 10, 400, 75, 75);
                 break;
             default:
         }
