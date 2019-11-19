@@ -20,26 +20,23 @@ public abstract class Critter {
     private void updatePos() {
         if (theta == Math.PI / 2) {
             xPos += speed;
-            img = "graphics/BasicEnemy1.png";
+            
             xTilePos = xPos / 75;
             yTilePos = yPos / 75;
         } // east
         else if (theta == Math.PI) {
             yPos += speed;
-            img = "graphics/BasicEnemy2.png";
             xTilePos = xPos / 75;
             yTilePos = yPos / 75;
         } // south
         else if (theta == -Math.PI / 2) {
             xPos -= speed;
-            img = "graphics/BasicEnemy3.png";
             xTilePos = xPos / 75 + 1;
             yTilePos = yPos / 75;
             if (xPos < 0) xTilePos = 0;
         } // west
         else if (theta == 0) {
             yPos -= speed;
-            img = "graphics/BasicEnemy4.png";
             xTilePos = xPos / 75;
             yTilePos = yPos / 75 + 1;
             if (yPos < 0) yTilePos = 0;
@@ -77,40 +74,48 @@ public abstract class Critter {
             if (yTilePos < 7)
                 if (Model.mapMatrix[yTilePos + 1][xTilePos] == 1) {
                     theta = Math.PI;
+                    img = "graphics/BasicEnemy2.png";                  
                 }
             if (yTilePos > 0)
                 if (Model.mapMatrix[yTilePos - 1][xTilePos] == 1) {
                     theta = 0;
+                    img = "graphics/BasicEnemy4.png";
                 }
         } // east
         else if (theta == Math.PI) {
             if (xTilePos > 0)
                 if (Model.mapMatrix[yTilePos][xTilePos - 1] == 1) {
                     theta = -Math.PI / 2;
+                    img = "graphics/BasicEnemy3.png";
                 }
             if (xTilePos < 7)
                 if (Model.mapMatrix[yTilePos][xTilePos + 1] == 1) {
                     theta = Math.PI / 2;
+                    img = "graphics/BasicEnemy1.png";
                 }
         } // south
         else if (theta == -Math.PI / 2) {
             if (yTilePos < 7)
                 if (Model.mapMatrix[yTilePos + 1][xTilePos] == 1) {
                     theta = Math.PI;
+                    img = "graphics/BasicEnemy2.png";                       
                 }
             if (yTilePos > 0)
                 if (Model.mapMatrix[yTilePos - 1][xTilePos] == 1) {
                     theta = 0;
+                    img = "graphics/BasicEnemy4.png";
                 }
         } // west
         else if (theta == 0) {
             if (xTilePos > 0)
                 if (Model.mapMatrix[yTilePos][xTilePos - 1] == 1) {
                     theta = -Math.PI / 2;
+                    img = "graphics/BasicEnemy3.png";
                 }
             if (xTilePos < 7)
                 if (Model.mapMatrix[yTilePos][xTilePos + 1] == 1) {
                     theta = Math.PI / 2;
+                    img = "graphics/BasicEnemy1.png";
                 }
         } // north
         xPos = xTilePos * 75;
