@@ -5,23 +5,23 @@ import Entities.Model;
 import Entities.Towers.Tower;
 import MainPanels.BoardPanel;
 import MainPanels.GamePanel;
+import MainPanels.StartPanel;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Window extends JFrame implements MouseListener {
     boolean isRunning = true;
+    StartPanel startPanel;
 
     GamePanel gamePanel ;
     BoardPanel boardPanel;
 
     public Window(){
+        startPanel = new StartPanel();
+
         gamePanel = new GamePanel();
         boardPanel = new BoardPanel(new int[][]{
                 {0, 1, 1, 1, 1, 1, 1, 0},
@@ -35,9 +35,23 @@ public class Window extends JFrame implements MouseListener {
         }, 0, 4, 0, 6);
         this.setSize(800, 638);
         this.setLayout(null);
-        this.add(gamePanel);
-        this.add(boardPanel);
+        this.setLocationRelativeTo(null);
+        this.add(startPanel);
+
+        addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == 32){
+                    getContentPane().removeAll();
+                    getContentPane().repaint();
+                    add(gamePanel);
+                    add(boardPanel);
+                }
+            }
+        });
         this.setVisible(true);
+        this.setTitle("Tower Defense");
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         addMouseListener(this);
     }
 

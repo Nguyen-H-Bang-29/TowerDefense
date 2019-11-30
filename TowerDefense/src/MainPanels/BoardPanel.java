@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BoardPanel extends JPanel {
-
     public BoardPanel(int[][] mapMatrix, int xEntrance, int yEntrance, int xExit, int yExit) {
         Model.mapRenderMatrix = new Image[8][8];
         Model.mapMatrix = mapMatrix;
@@ -58,18 +57,20 @@ public class BoardPanel extends JPanel {
 
     @Override
     protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
-        loadMap(g2d);
 
-        for (Critter critter : Model.critters) {
-            g2d.drawImage(Model.loadImage(critter.img), critter.xPos, critter.yPos, 75, 75, null);
-        }
-        for (Bullet bullet : Model.bullets) {
-            g2d.drawImage(Model.loadImage(bullet.img), bullet.xPos, bullet.yPos, 10, 10, null);
-        }
-        for (Tower tower : Model.towers) {
-            g2d.drawImage(Model.loadImage(tower.img), tower.xTilePos * 75, tower.yTilePos * 75, 75, 75, null);
+                super.paintComponent(g);
+                loadMap(g2d);
+
+                for (Critter critter : Model.critters) {
+                    g2d.drawImage(Model.loadImage(critter.img), critter.xPos, critter.yPos, 75, 75, null);
+                }
+                for (Bullet bullet : Model.bullets) {
+                    g2d.drawImage(Model.loadImage(bullet.img), bullet.xPos, bullet.yPos, 10, 10, null);
+                }
+                for (Tower tower : Model.towers) {
+                    g2d.drawImage(Model.loadImage(tower.img), tower.xTilePos * 75, tower.yTilePos * 75, 75, 75, null);
+                }
+
         }
     }
-}

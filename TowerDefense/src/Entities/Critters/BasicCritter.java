@@ -8,7 +8,7 @@ public class BasicCritter extends Critter {
         this.speed = 4;
         this.damage = 5;
         this.reward = 10;
-        this.img = "graphics/ScorpionSpriteSheet.png";
+        this.img = "graphics/BasicEnemy1.png";
         this.theta = Math.PI / 2;
         this.isAlive = true;
     }

@@ -19,7 +19,7 @@ public class GamePanel extends JPanel {
 
     public GamePanel(){
         goldIcon = Model.loadIconLabel("graphics/CurrencyGraphic.png", 50, 50, 30, 30);
-        goldOwned = Model.loadTextLabel(Model.gold + "G", 95, 50, 130, 30);
+        goldOwned = Model.loadTextLabel(Model.gold + "$", 95, 50, 130, 30);
         goldOwned.setFont(goldOwned.getFont().deriveFont((float) 20));
 
         healthBar = Model.loadIconLabel("graphics/HealthBar.png", 20, 140, Model.health/100*150, 20);
@@ -46,7 +46,7 @@ public class GamePanel extends JPanel {
 
     public void updateGold(int goldEarned){
         Model.gold += goldEarned;
-        goldOwned = Model.loadTextLabel(Model.gold + "G", 95, 50, 130, 30);
+        goldOwned = Model.loadTextLabel(Model.gold + "$", 95, 50, 130, 30);
         goldOwned.setFont(goldOwned.getFont().deriveFont((float) 20));
         revalidate();
         repaint();

@@ -20,6 +20,8 @@ public abstract class Model {
     public static List<Critter> critters = new ArrayList<>();
     public static List<Bullet> bullets = new ArrayList<>();
 
+    public static Image start1, start2;
+
     public enum towerTypes{
         basic,
         freezer,
