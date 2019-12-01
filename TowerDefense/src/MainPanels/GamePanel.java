@@ -4,8 +4,12 @@ import Entities.Model;
 import Entities.Towers.BasicTower;
 import Entities.Towers.Tower;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 
 public class GamePanel extends JPanel {
     private JLabel goldOwned;
@@ -14,6 +18,8 @@ public class GamePanel extends JPanel {
     private JLabel basicTowerDes, freezerTowerDes, sniperTowerDes;
     private JLabel score;
     private JLabel healthBar;
+
+    public Clip clip;
 
     public Model.towerTypes selectedTower = null;
 
@@ -63,6 +69,7 @@ public class GamePanel extends JPanel {
 
     public void selectTower(Model.towerTypes selectedTower){
         this.selectedTower = selectedTower;
+
         switch (selectedTower){
             case basic:
                 basicTowerIcon = Model.loadIconLabel("graphics/BasicTowerSelected.png", 10,200, 75, 75);

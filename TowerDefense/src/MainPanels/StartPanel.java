@@ -9,11 +9,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 public class StartPanel extends JPanel {
     int n = 0;
     public Clip clip;
-    AudioInputStream audioInputStream;
+    boolean hasSound=false;
+    AudioInputStream  audioInputStream;
+    // AudioInputStream audioInputStream;
+
     public StartPanel() {
         setSize(800, 600);
         ActionListener critterTListener = new ActionListener() {
@@ -22,6 +26,7 @@ public class StartPanel extends JPanel {
                 repaint();
             }
         };
+
         Timer critterTimer = new Timer(300, critterTListener);
         critterTimer.setRepeats(true);
         critterTimer.start();
@@ -29,13 +34,6 @@ public class StartPanel extends JPanel {
 
     protected void paintComponent(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
-        try {
-            audioInputStream = AudioSystem.getAudioInputStream(getClass().getResource("/sound/menuSound.wav"));
-            clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-            clip.start();
-        } catch (Exception e){
-        }
 
         switch (n%2) {
 

@@ -1,5 +1,7 @@
 package Entities.Critters;
 
+import Entities.Model;
+
 public class BasicCritter extends Critter {
     public BasicCritter(int xEntrance, int yEntrance) {
         this.health = 750;

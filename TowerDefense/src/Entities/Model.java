@@ -5,6 +5,9 @@ import Entities.Critters.Critter;
 import Entities.Towers.Tower;
 
 import javax.imageio.ImageIO;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
@@ -20,7 +23,8 @@ public abstract class Model {
     public static List<Critter> critters = new ArrayList<>();
     public static List<Bullet> bullets = new ArrayList<>();
 
-    public static Image start1, start2;
+    public static Clip clip;
+
 
     public enum towerTypes{
         basic,
@@ -36,6 +40,31 @@ public abstract class Model {
             return null;
         }
     }
+
+    public static void addSound(String path){
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(path));
+            clip = AudioSystem.getClip();
+            clip.open(audioInputStream);
+            clip.start();
+        } catch (Exception e) {
+        }
+    }
+
+    public static void loopSound(){
+        try {
+            clip.loop(Clip.LOOP_CONTINUOUSLY);
+        } catch (Exception e) {
+
+        }
+    }
+    public static void stopSound(){
+        try {
+            clip.stop();
+        } catch (Exception e) {
+        }
+    }
+
 
     public static JLabel loadTextLabel (String text, int x, int y, int width, int height){
         JLabel label = new JLabel(text);

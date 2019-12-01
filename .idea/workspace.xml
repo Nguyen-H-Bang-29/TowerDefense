@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d888404c-ba17-406a-828b-7a8432d88171" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TowerDefense/src/MainPanels/StartPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Entities/Bullets/BasicBullet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Entities/Bullets/Bullet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Entities/Critters/BasicCritter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Entities/Critters/Critter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Entities/Model$towerTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Entities/Model.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Entities/Towers/BasicTower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Entities/Towers/Tower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/META-INF/TowerDefense.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/META-INF/TowerDefense.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/MainPanels/BoardPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/MainPanels/GamePanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/MainPanels/GamePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/TowerDefense.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Window$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Window$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Window$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/Window.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/src/Entities/Critters/BasicCritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/src/Entities/Critters/BasicCritter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/src/Entities/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/src/Entities/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/src/MainPanels/BoardPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/src/MainPanels/BoardPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/src/MainPanels/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/src/MainPanels/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TowerDefense/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/src/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/MainPanels/StartPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/MainPanels/StartPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/MainPanels/StartPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/MainPanels/StartPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/Window$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/Window$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/Window$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/Window$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/Window$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/Window$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/Window$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/out/production/TowerDefense/test/TowerDefense/Window.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TowerDefense/src/MainPanels/StartPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/TowerDefense/src/MainPanels/StartPanel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,11 +36,11 @@
         <entry file="file://$PROJECT_DIR$/TowerDefense/src/Window.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="173">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1204#1549#0" expanded="true" />
-                <element signature="e#1548#1549#0" expanded="true" />
+                <element signature="e#1185#1530#0" expanded="true" />
+                <element signature="e#1529#1530#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,14 +76,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TowerDefense/src/MainPanels/StartPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="408">
+              <caret line="32" column="103" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
               <folding>
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#590#591#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TowerDefense/TowerDefense.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -169,7 +160,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="40" />
-    <option name="y" value="66" />
+    <option name="y" value="65" />
     <option name="width" value="975" />
     <option name="height" value="695" />
   </component>
@@ -178,6 +169,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,15 +183,27 @@
               <item name="TowerDefense" type="462c0819:PsiDirectoryNode" />
               <item name="TowerDefense" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TowerDefense" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerDefense" type="462c0819:PsiDirectoryNode" />
+              <item name="TowerDefense" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerDefense" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerDefense" type="462c0819:PsiDirectoryNode" />
+              <item name="TowerDefense" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MainPanels" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/TowerDefense" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -255,7 +260,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16912752" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17114094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -389,6 +394,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TowerDefense/src/MainPanels/GamePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="111" column="23" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TowerDefense/src/MainPanels/BoardPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -410,32 +422,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TowerDefense/src/MainPanels/GamePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="111" column="23" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/TowerDefense/TowerDefense.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TowerDefense/src/Window.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1204#1549#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
+            <element signature="e#1185#1530#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TowerDefense/src/MainPanels/StartPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state relative-caret-position="408">
+          <caret line="32" column="103" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
           <folding>
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
           </folding>
         </state>
       </provider>

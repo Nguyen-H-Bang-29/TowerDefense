@@ -3,6 +3,11 @@ package Entities.Towers;
 import Entities.Bullets.BasicBullet;
 import Entities.Model;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import java.io.File;
+
 public class BasicTower extends Tower {
     public BasicTower(int x, int y) {
         this.xTilePos = x;
@@ -20,6 +25,7 @@ public class BasicTower extends Tower {
         if ((System.currentTimeMillis() - lastShotTime) / 1000 > reloadTime) {
             lastShotTime = System.currentTimeMillis();
             Model.bullets.add(new BasicBullet(this, target));
+            Model.addSound("sound/bullet1.wav");
         }
     }
 

@@ -7,8 +7,12 @@ import MainPanels.BoardPanel;
 import MainPanels.GamePanel;
 import MainPanels.StartPanel;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 import java.awt.event.*;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +25,8 @@ public class Window extends JFrame implements MouseListener {
 
     public Window(){
         startPanel = new StartPanel();
+        Model.addSound("sound/welcome.wav");
+        Model.loopSound();
 
         gamePanel = new GamePanel();
         boardPanel = new BoardPanel(new int[][]{
@@ -44,6 +50,7 @@ public class Window extends JFrame implements MouseListener {
                 if (e.getKeyCode() == 32){
                     getContentPane().removeAll();
                     getContentPane().repaint();
+                    Model.stopSound();
                     add(gamePanel);
                     add(boardPanel);
                 }
