@@ -1,29 +1,20 @@
 package MainPanels;
 
 import Entities.Model;
-
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 
 public class StartPanel extends JPanel {
     int n = 0;
-    public Clip clip;
-    boolean hasSound=false;
-    AudioInputStream  audioInputStream;
-    // AudioInputStream audioInputStream;
 
     public StartPanel() {
         setSize(800, 600);
         ActionListener critterTListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                repaint();
+                 repaint();
             }
         };
 

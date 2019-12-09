@@ -3,6 +3,8 @@ package MainPanels;
 import Entities.Model;
 import Entities.Towers.BasicTower;
 import Entities.Towers.Tower;
+import Entities.Towers.Tower2;
+import Entities.Towers.Tower3;
 
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -18,8 +20,7 @@ public class GamePanel extends JPanel {
     private JLabel basicTowerDes, freezerTowerDes, sniperTowerDes;
     private JLabel score;
     private JLabel healthBar;
-
-    public Clip clip;
+    private JButton pause;
 
     public Model.towerTypes selectedTower = null;
 
@@ -31,12 +32,12 @@ public class GamePanel extends JPanel {
         healthBar = Model.loadIconLabel("graphics/HealthBar.png", 20, 140, Model.health/100*150, 20);
 
         basicTowerIcon = Model.loadIconLabel("graphics/BasicTower.png", 10,200, 75, 75);
-        freezerTowerIcon =  Model.loadIconLabel("graphics/BasicTower.png", 10, 300, 75, 75);
-        sniperTowerIcon =  Model.loadIconLabel("graphics/BasicTower.png", 10, 400, 75, 75);
+        freezerTowerIcon =  Model.loadIconLabel("graphics/Tower2.png", 10, 300, 75, 75);
+        sniperTowerIcon =  Model.loadIconLabel("graphics/Tower3.png", 10, 400, 75, 75);
 
-        basicTowerDes = Model.loadTextLabel( "<html>Cost: 50G<br>Range: 200<br>Damage: 100<br>Reload: 0.5s</html>" ,90, 200, 75, 75);
-        freezerTowerDes = Model.loadTextLabel("<html>Cost: 50G<br>Range: 200<br>Damage: 100<br>Reload: 0.5s</html>", 90, 300, 75, 75);
-        sniperTowerDes = Model.loadTextLabel("<html>Cost: 50G<br>Range: 200<br>Damage: 100<br>Reload: 0.5s</html>", 90, 400, 75, 75);
+        basicTowerDes = Model.loadTextLabel( "<html>Cost: 50$<br>Range: 175<br>Damage: 100<br>Reload: 0.5s</html>" ,90, 200, 75, 75);
+        freezerTowerDes = Model.loadTextLabel("<html>Cost: 75$<br>Range: 200<br>Damage: 150<br>Reload: 1.5s</html>", 90, 300, 75, 75);
+        sniperTowerDes = Model.loadTextLabel("<html>Cost: 100$<br>Range: 230<br>Damage: 200<br>Reload: 2.5s</html>", 90, 400, 75, 75);
 
         score = Model.loadTextLabel("Score: " + Model.score, 50, 510, 150 , 30);
         score.setFont(score.getFont().deriveFont((float) 20));
@@ -69,16 +70,16 @@ public class GamePanel extends JPanel {
 
     public void selectTower(Model.towerTypes selectedTower){
         this.selectedTower = selectedTower;
-
+        Model.addSound("sound/Click.wav");
         switch (selectedTower){
             case basic:
                 basicTowerIcon = Model.loadIconLabel("graphics/BasicTowerSelected.png", 10,200, 75, 75);
                 break;
             case freezer:
-                freezerTowerIcon =  Model.loadIconLabel("graphics/BasicTowerSelected.png", 10, 300, 75, 75);
+                freezerTowerIcon =  Model.loadIconLabel("graphics/Tower2Selected.png", 10, 300, 75, 75);
                 break;
             case sniper:
-                sniperTowerIcon =  Model.loadIconLabel("graphics/BasicTowerSelected.png", 10, 400, 75, 75);
+                sniperTowerIcon =  Model.loadIconLabel("graphics/Tower3Selected.png", 10, 400, 75, 75);
                 break;
             default:
         }
@@ -93,10 +94,10 @@ public class GamePanel extends JPanel {
                 basicTowerIcon = Model.loadIconLabel("graphics/BasicTower.png", 10,200, 75, 75);
                 break;
             case freezer:
-                freezerTowerIcon =  Model.loadIconLabel("graphics/BasicTower.png", 10, 300, 75, 75);
+                freezerTowerIcon =  Model.loadIconLabel("graphics/Tower2.png", 10, 300, 75, 75);
                 break;
             case sniper:
-                sniperTowerIcon =  Model.loadIconLabel("graphics/BasicTower.png", 10, 400, 75, 75);
+                sniperTowerIcon =  Model.loadIconLabel("graphics/Tower3.png", 10, 400, 75, 75);
                 break;
             default:
         }
@@ -113,17 +114,16 @@ public class GamePanel extends JPanel {
     }
 
     public void buyTower(int xTilePos, int yTilePos){
-
         Tower tower;
         switch (selectedTower){
             case basic:
                 tower = new BasicTower(xTilePos, yTilePos);
                 break;
             case freezer:
-                tower = null;
+                tower = new Tower2(xTilePos, yTilePos);
                 break;
             case sniper:
-                tower = null;
+                tower = new Tower3(xTilePos, yTilePos);
                 break;
             default:
                 tower = null;

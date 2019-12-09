@@ -3,16 +3,10 @@ package MainPanels;
 import Entities.Bullets.Bullet;
 import Entities.Critters.Critter;
 import Entities.Model;
-import Entities.Towers.BasicTower;
 import Entities.Towers.Tower;
-
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class BoardPanel extends JPanel {
     public BoardPanel(int[][] mapMatrix, int xEntrance, int yEntrance, int xExit, int yExit) {
@@ -33,7 +27,7 @@ public class BoardPanel extends JPanel {
                 if (Model.mapMatrix[i][j] == 0) {
                     Model.mapRenderMatrix[i][j] = Model.loadImage("graphics/SandTile.png");
                 } else if(Model.mapMatrix[i][j] == 1){
-                    Model.mapRenderMatrix[i][j] = Model.loadImage("graphics/WaterTile.png");
+                    Model.mapRenderMatrix[i][j] = Model.loadImage("graphics/GravelTile.png");
                 } else if(Model.mapMatrix[i][j] == 3){
                     Model.mapRenderMatrix[i][j] = Model.loadImage("graphics/PalmTile.png");
                 } else if(Model.mapMatrix[i][j] == 4){
@@ -66,11 +60,10 @@ public class BoardPanel extends JPanel {
                     g2d.drawImage(Model.loadImage(critter.img), critter.xPos, critter.yPos, 75, 75, null);
                 }
                 for (Bullet bullet : Model.bullets) {
-                    g2d.drawImage(Model.loadImage(bullet.img), bullet.xPos, bullet.yPos, 10, 10, null);
+                    g2d.drawImage(Model.loadImage(bullet.img), bullet.xPos, bullet.yPos, 7, 7, null);
                 }
                 for (Tower tower : Model.towers) {
                     g2d.drawImage(Model.loadImage(tower.img), tower.xTilePos * 75, tower.yTilePos * 75, 75, 75, null);
                 }
-
         }
     }

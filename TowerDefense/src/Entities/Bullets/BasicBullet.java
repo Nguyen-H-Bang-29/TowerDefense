@@ -6,8 +6,8 @@ import Entities.Towers.Tower;
 public class BasicBullet extends Bullet {
     public BasicBullet(Tower source, Critter target) {
         super(source, target);
-        speed = 20;
+        speed = 15;
         damage = 100;
-        img = "graphics/cannonBall.png";
+        img = "graphics/BasicBullet.png";
     }
 }

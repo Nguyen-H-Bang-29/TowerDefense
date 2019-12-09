@@ -25,7 +25,6 @@ public abstract class Model {
 
     public static Clip clip;
 
-
     public enum towerTypes{
         basic,
         freezer,
@@ -65,7 +64,6 @@ public abstract class Model {
         }
     }
 
-
     public static JLabel loadTextLabel (String text, int x, int y, int width, int height){
         JLabel label = new JLabel(text);
         label.setSize(width, height);
@@ -73,6 +71,14 @@ public abstract class Model {
         label.setLocation(x, y);
         return label;
     }
+    public static JButton loadIconButton (String text, int x, int y, int w, int h){
+        JButton button = new JButton(text);
+        button.setSize(w, h);
+
+        button.setLocation(x, y);
+        return button;
+    }
+
     public static JLabel loadIconLabel(String path, int x, int y, int width, int height){
         JLabel label = new JLabel(new ImageIcon(path));
         label.setSize(width, height);

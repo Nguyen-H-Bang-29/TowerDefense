@@ -3,6 +3,9 @@ package Entities.Towers;
 import Entities.Critters.Critter;
 import Entities.Model;
 
+import java.awt.*;
+import java.awt.geom.AffineTransform;
+
 abstract public class Tower {
     public int xTilePos;
     public int yTilePos;

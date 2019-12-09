@@ -1,9 +1,12 @@
 import Entities.Bullets.Bullet;
 import Entities.Critters.BasicCritter;
 import Entities.Critters.Critter;
+import Entities.Critters.Critter2;
+import Entities.Critters.Critter3;
 import Entities.Model;
 import Entities.Towers.Tower;
 import MainPanels.BoardPanel;
+import MainPanels.EndPanel;
 import MainPanels.GamePanel;
 import MainPanels.StartPanel;
 
@@ -17,15 +20,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Window extends JFrame implements MouseListener {
-    boolean isRunning = true;
+    boolean isRunning = false;
     StartPanel startPanel;
 
     GamePanel gamePanel ;
     BoardPanel boardPanel;
+    EndPanel endPanel;
 
     public Window(){
         startPanel = new StartPanel();
-        Model.addSound("sound/welcome.wav");
+        endPanel = new EndPanel();
+        Model.addSound("sound/StartSound.wav");
         Model.loopSound();
 
         gamePanel = new GamePanel();
@@ -50,7 +55,11 @@ public class Window extends JFrame implements MouseListener {
                 if (e.getKeyCode() == 32){
                     getContentPane().removeAll();
                     getContentPane().repaint();
+                    isRunning = true;
+
                     Model.stopSound();
+                    Model.addSound("sound/SoundTrack.wav");
+                    Model.loopSound();
                     add(gamePanel);
                     add(boardPanel);
                 }
@@ -123,13 +132,19 @@ public class Window extends JFrame implements MouseListener {
                 else{
                     gamePanel.loseHealth(critter.damage);
                     if(Model.health <= 0) {
+                        Model.stopSound();
+                        Model.addSound("sound/GameOver.wav");
                         JDialog lostDialog = new JDialog();
-                        JLabel message = new JLabel("You lost!");
+                        JLabel message = new JLabel("Your Score: " + Model.score);
                         lostDialog.add(message);
+
                         isRunning = false;
                         lostDialog.setDefaultCloseOperation(HIDE_ON_CLOSE);
                         lostDialog.setBounds(300, 250, 200, 100);
                         lostDialog.setVisible(true);
+                        getContentPane().removeAll();
+                        getContentPane().repaint();
+                        add(endPanel);
                     }
                     removedList.add(critter);
                 }
@@ -181,6 +196,8 @@ public class Window extends JFrame implements MouseListener {
             public void actionPerformed(ActionEvent e) {
                 if(isRunning) {
                     Model.critters.add(new BasicCritter(Model.xEntrance, Model.yEntrance));
+                    Model.critters.add(new Critter2(Model.xEntrance, Model.yEntrance));
+                    Model.critters.add(new Critter3(Model.xEntrance, Model.yEntrance));
                 }
             }
         };

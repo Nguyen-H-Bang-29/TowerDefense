@@ -1,7 +1,11 @@
 package Entities.Bullets;
 
 import Entities.Critters.Critter;
+import Entities.Model;
 import Entities.Towers.Tower;
+
+import java.awt.*;
+import java.awt.geom.AffineTransform;
 
 abstract public class Bullet {
     public Critter target;

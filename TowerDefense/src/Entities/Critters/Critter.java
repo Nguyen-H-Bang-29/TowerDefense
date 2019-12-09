@@ -16,6 +16,8 @@ public abstract class Critter {
     public int yTilePos;
     public boolean isAlive;
     public int stepCount = 0;
+    public String eastImg2, eastImg4;
+    public String southImg3, southImg1;
 
     private void updatePos() {
         if (theta == Math.PI / 2) {
@@ -74,48 +76,48 @@ public abstract class Critter {
             if (yTilePos < 7)
                 if (Model.mapMatrix[yTilePos + 1][xTilePos] == 1) {
                     theta = Math.PI;
-                    img = "graphics/BasicEnemy2.png";                  
+                    img = eastImg2;
                 }
             if (yTilePos > 0)
                 if (Model.mapMatrix[yTilePos - 1][xTilePos] == 1) {
                     theta = 0;
-                    img = "graphics/BasicEnemy4.png";
+                    img = eastImg4;
                 }
         } // east
         else if (theta == Math.PI) {
             if (xTilePos > 0)
                 if (Model.mapMatrix[yTilePos][xTilePos - 1] == 1) {
                     theta = -Math.PI / 2;
-                    img = "graphics/BasicEnemy3.png";
+                    img = southImg3;
                 }
             if (xTilePos < 7)
                 if (Model.mapMatrix[yTilePos][xTilePos + 1] == 1) {
                     theta = Math.PI / 2;
-                    img = "graphics/BasicEnemy1.png";
+                    img = southImg1;
                 }
         } // south
         else if (theta == -Math.PI / 2) {
             if (yTilePos < 7)
                 if (Model.mapMatrix[yTilePos + 1][xTilePos] == 1) {
                     theta = Math.PI;
-                    img = "graphics/BasicEnemy2.png";                       
+                    img = eastImg2;
                 }
             if (yTilePos > 0)
                 if (Model.mapMatrix[yTilePos - 1][xTilePos] == 1) {
                     theta = 0;
-                    img = "graphics/BasicEnemy4.png";
+                    img = eastImg4;
                 }
         } // west
         else if (theta == 0) {
             if (xTilePos > 0)
                 if (Model.mapMatrix[yTilePos][xTilePos - 1] == 1) {
                     theta = -Math.PI / 2;
-                    img = "graphics/BasicEnemy3.png";
+                    img = southImg3;
                 }
             if (xTilePos < 7)
                 if (Model.mapMatrix[yTilePos][xTilePos + 1] == 1) {
                     theta = Math.PI / 2;
-                    img = "graphics/BasicEnemy1.png";
+                    img = southImg1;
                 }
         } // north
         xPos = xTilePos * 75;

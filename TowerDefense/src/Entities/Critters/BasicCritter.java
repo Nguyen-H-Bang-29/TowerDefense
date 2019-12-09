@@ -1,16 +1,18 @@
 package Entities.Critters;
 
-import Entities.Model;
-
 public class BasicCritter extends Critter {
     public BasicCritter(int xEntrance, int yEntrance) {
-        this.health = 750;
+        this.health = 650;
         this.xPos = xEntrance * 75;
         this.yPos = yEntrance * 75;
-        this.speed = 4;
+        this.speed = 1;
         this.damage = 5;
-        this.reward = 10;
+        this.reward = 5;
         this.img = "graphics/BasicEnemy1.png";
+        this.eastImg2 = "graphics/BasicEnemy2.png";
+        this.eastImg4 = "graphics/BasicEnemy4.png";
+        this.southImg1 = "graphics/BasicEnemy1.png";
+        this.southImg3 = "graphics/BasicEnemy3.png";
         this.theta = Math.PI / 2;
         this.isAlive = true;
     }

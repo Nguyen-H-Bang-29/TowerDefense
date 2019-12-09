@@ -2,20 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91c42f99-9f14-487c-a859-00715781d243" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/MainPanels/StartPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/MainPanels/StartPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/MainPanels/StartPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/MainPanels/StartPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/BasicEnemy1.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/BasicEnemy1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/BasicEnemy2.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/BasicEnemy2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/BasicEnemy3.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/BasicEnemy3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/BasicEnemy4.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/BasicEnemy4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/BasicTower.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/BasicTower.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/BasicTowerSelected.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/BasicTowerSelected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/Preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/Preview_HD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/Preview_Kenney.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/Sample.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/Sample_HD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/cannonBall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/castle-kit-1.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/tower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/tower1..png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/tower1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/tower1top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/tower2top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/tower_NW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/META-INF/TowerDefense.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Entities/Bullets/BasicBullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Entities/Bullets/Bullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Entities/Critters/BasicCritter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Entities/Critters/Critter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Entities/Model$towerTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Entities/Model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Entities/Towers/BasicTower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Entities/Towers/Tower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/META-INF/TowerDefense.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/MainPanels/BoardPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/MainPanels/GamePanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/MainPanels/GamePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/MainPanels/StartPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/MainPanels/StartPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/TowerDefense.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TowerDefense/test/TowerDefense/Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Bullets/BasicBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Bullets/BasicBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Bullets/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Bullets/Bullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Critters/BasicCritter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Critters/BasicCritter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Critters/Critter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Critters/Critter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Model$towerTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Model$towerTypes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Towers/BasicTower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Towers/BasicTower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Towers/Tower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Entities/Towers/Tower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/MainPanels/BoardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/MainPanels/BoardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/MainPanels/GamePanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/MainPanels/GamePanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/MainPanels/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/MainPanels/GamePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/MainPanels/StartPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/MainPanels/StartPanel$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/MainPanels/StartPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/MainPanels/StartPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sound/StartMenu.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Window$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Window$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Window$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Window$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Window$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Window$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Window$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TowerDefense/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TowerDefense/Window.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/StartMenu.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/bl1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/bullet1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/sound/bullet1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/determination.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/selecttower.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/welcome.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Bullets/BasicBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Bullets/BasicBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Bullets/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Bullets/Bullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entities/Critters/BasicCritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Critters/BasicCritter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Critters/Critter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Critters/Critter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entities/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entities/Towers/BasicTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Towers/BasicTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Towers/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Towers/Tower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainPanels/BoardPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPanels/BoardPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainPanels/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPanels/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainPanels/StartPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPanels/StartPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
@@ -32,80 +91,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Window.java">
+        <entry file="file://$PROJECT_DIR$/src/Entities/Towers/Tower2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="306">
+              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
-                <element signature="e#1679#2057#0" expanded="true" />
-                <element signature="e#2056#2057#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainPanels/GamePanel.java">
+        <entry file="file://$PROJECT_DIR$/src/Entities/Towers/Tower3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="92" column="69" lean-forward="true" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entities/Model.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entities/Critters/BasicCritter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
               <folding>
-                <element signature="e#482#483#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entities/Bullets/BasicBullet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entities/Bullets/Bullet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-212">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Entities/Towers/BasicTower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entities/Towers/Tower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -113,8 +117,60 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entities/Critters/Critter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+            <state relative-caret-position="187">
+              <caret line="111" column="29" lean-forward="true" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
+              <folding>
+                <element signature="e#4040#4041#0" expanded="true" />
+                <element signature="e#4088#4089#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entities/Critters/Critter2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Window.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="80" column="58" lean-forward="true" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entities/Bullets/BasicBullet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entities/Critters/BasicCritter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entities/Critters/Critter3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -122,8 +178,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainPanels/BoardPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-314">
-              <caret line="33" column="82" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="82" />
+            <state relative-caret-position="248">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MainPanels/GamePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -148,30 +216,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Entities/Bullets/BasicBullet.java" />
-        <option value="$PROJECT_DIR$/src/Entities/Critters/Critter.java" />
-        <option value="$PROJECT_DIR$/src/MainPanels/BoardPanel.java" />
         <option value="$PROJECT_DIR$/src/MainPanels/GameSound.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Gun/BasicGun.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Bullets/Bullet.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Towers/Tower.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Critters/Critter.java" />
+        <option value="$PROJECT_DIR$/src/MainPanels/EndPanel.java" />
+        <option value="$PROJECT_DIR$/src/MainPanels/GamePanel.java" />
         <option value="$PROJECT_DIR$/src/MainPanels/StartPanel.java" />
         <option value="$PROJECT_DIR$/src/Entities/Model.java" />
-        <option value="$PROJECT_DIR$/src/Window.java" />
         <option value="$PROJECT_DIR$/src/Entities/Critters/BasicCritter.java" />
-        <option value="$PROJECT_DIR$/src/MainPanels/GamePanel.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Critters/Critter2.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Bullets/Bullet2.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Bullets/BasicBullet.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Bullets/Bullet3.java" />
         <option value="$PROJECT_DIR$/src/Entities/Towers/BasicTower.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Towers/Tower3.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Towers/Tower2.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Critters/Critter3.java" />
+        <option value="$PROJECT_DIR$/src/Window.java" />
+        <option value="$PROJECT_DIR$/src/MainPanels/BoardPanel.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/TowerDefense.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="40" />
     <option name="y" value="65" />
     <option name="width" value="975" />
@@ -184,17 +252,13 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="TowerDefense" type="b2602c69:ProjectViewProjectNode" />
               <item name="TowerDefense" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TowerDefense" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TowerDefense" type="462c0819:PsiDirectoryNode" />
-              <item name="sound" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TowerDefense" type="b2602c69:ProjectViewProjectNode" />
@@ -238,12 +302,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../New folder/TowerDefense/TowerDefense" />
+    <property name="last_opened_file_path" value="E:/game-master/TowerDefense" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -290,8 +353,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19798657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14630872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -300,7 +364,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19688386" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.05240793" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,39 +406,10 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainPanels/GameSound.java" />
-    <entry file="file://$PROJECT_DIR$/src/TowerDefense.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding>
-            <element signature="e#70#71#0" expanded="true" />
-            <element signature="e#105#106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.desktop/javax/swing/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="207" column="13" selection-start-line="207" selection-start-column="13" selection-end-line="207" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.desktop/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="799" column="31" selection-start-line="799" selection-start-column="16" selection-end-line="799" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainPanels/StartPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -396,80 +431,196 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entities/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/graphics/GameOver.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Window.java">
+    <entry file="file://$PROJECT_DIR$/src/Entities/Gun/BasicGun.java" />
+    <entry file="file://$PROJECT_DIR$/deletebutton1.png" />
+    <entry file="file://$PROJECT_DIR$/exitbutton.png" />
+    <entry file="file://$PROJECT_DIR$/src/TowerDefense.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding>
-            <element signature="e#1679#2057#0" expanded="true" />
-            <element signature="e#2056#2057#0" expanded="true" />
+            <element signature="e#70#71#0" expanded="true" />
+            <element signature="e#105#106#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entities/Bullets/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-212">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="457">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entities/Critters/Critter.java">
+    <entry file="file://$PROJECT_DIR$/src/MainPanels/EndPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#147#148#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entities/Bullets/BasicBullet.java">
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.desktop/javax/swing/JComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="231">
+          <caret line="1657" column="27" lean-forward="true" selection-start-line="1657" selection-start-column="27" selection-end-line="1657" selection-end-column="27" />
+          <folding>
+            <element signature="e#63127#63128#0" expanded="true" />
+            <element signature="e#63180#63181#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainPanels/BoardPanel.java">
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.desktop/java/awt/Component.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-314">
-          <caret line="33" column="82" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="82" />
+        <state relative-caret-position="265">
+          <caret line="2666" column="25" lean-forward="true" selection-start-line="2666" selection-start-column="25" selection-end-line="2666" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entities/Towers/Tower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="281">
+          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Bullets/Bullet2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPanels/StartPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Bullets/Bullet3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entities/Critters/BasicCritter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="238">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Critters/Critter3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Critters/Critter2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Towers/Tower2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding>
-            <element signature="e#482#483#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Towers/BasicTower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Towers/Tower3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Bullets/BasicBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Critters/Critter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="111" column="29" lean-forward="true" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
+          <folding>
+            <element signature="e#4040#4041#0" expanded="true" />
+            <element signature="e#4088#4089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/GravelTile.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="80" column="58" lean-forward="true" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPanels/BoardPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainPanels/GamePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="92" column="69" lean-forward="true" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entities/Towers/BasicTower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        <state relative-caret-position="325">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
