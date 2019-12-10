@@ -5,7 +5,7 @@ public class BasicCritter extends Critter {
         this.health = 650;
         this.xPos = xEntrance * 75;
         this.yPos = yEntrance * 75;
-        this.speed = 2;
+        this.speed = 3;
         this.damage = 5;
         this.reward = 5;
         this.img = "graphics/BasicEnemy1.png";

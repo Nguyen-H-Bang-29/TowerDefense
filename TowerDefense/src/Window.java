@@ -32,8 +32,6 @@ public class Window extends JFrame implements MouseListener {
     public Window(){
         startPanel = new StartPanel();
         endPanel = new EndPanel();
-        Model.addSound("sound/StartSound.wav");
-        Model.loopSound();
 
         gamePanel = new GamePanel();
         boardPanel = new BoardPanel(new int[][]{
@@ -50,6 +48,8 @@ public class Window extends JFrame implements MouseListener {
         this.setLayout(null);
         this.setLocationRelativeTo(null);
         this.add(startPanel);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        gamePanel.loseHealth(5);
 
         addKeyListener(new KeyAdapter() {
             @Override
@@ -77,8 +77,6 @@ public class Window extends JFrame implements MouseListener {
     public void mouseClicked(MouseEvent e) {
         int x = e.getX() - 7;
         int y = e.getY() - 30;
-        System.out.println(x);
-        System.out.println(y);
         if(x > 610 && x < 685 && y > 200 && y < 275) {
             if (gamePanel.selectedTower != null) gamePanel.unselectTower();
             gamePanel.selectTower(Model.towerTypes.basic);
@@ -96,9 +94,20 @@ public class Window extends JFrame implements MouseListener {
             gamePanel.buyTower(x/75, y/75);
         } else if (x < 600 && x > 0 && y < 600 && y > 0){
             gamePanel.sellTower(x/75, y/75);
-        } else gamePanel.unselectTower();
+        } else if (x > 620 && x < 670 && y > 15 && y < 45){
+            isRunning = false;
+            Model.stopSound();
+            getContentPane().removeAll();
+            getContentPane().repaint();
+            add(gamePanel);
+            add(boardPanel);
+        } else if (x > 695 && x < 780 && y > 15 && y < 45){
+            isRunning = true;
+            Model.addSound("sound/SoundTrack.wav");
+            Model.loopSound();
+        }
+        else gamePanel.unselectTower();
     }
-
     @Override
     public void mousePressed(MouseEvent e) {
         int x = e.getX() - 7;
@@ -138,22 +147,7 @@ public class Window extends JFrame implements MouseListener {
                     if(Model.health <= 0) {
                         Model.stopSound();
                         Model.addSound("sound/GameOver.wav");
-
                         isRunning = false;
-//                        Model.bullets = null;
-//                        Model.critters = null;
-//                        Model.towers = null;
-//                        Model.score = 0;
-//                        Model.mapMatrix = new int[8][8];
-//                        Model.clip = null;
-//                        Model.mapRenderMatrix = new Image[8][8];
-//                        Model.xEntrance = 0;
-//                        Model.yEntrance = 0;
-//                        Model.gold = 100;
-//                        Model.health = 100;
-//                        Model.xExit = 0;
-//                        Model.yExit =0;
-
                         getContentPane().removeAll();
                         getContentPane().repaint();
                         add(endPanel);
@@ -163,9 +157,9 @@ public class Window extends JFrame implements MouseListener {
                                 int x = e.getX();
                                 int y = e.getY();
                                 if (265 < x && x < 540 && 410 < y && y < 480){
-                                    isRunning = true;
                                     getContentPane().removeAll();
                                     getContentPane().repaint();
+
                                     add(gamePanel);
                                     add(boardPanel);
                                 }
@@ -203,8 +197,6 @@ public class Window extends JFrame implements MouseListener {
         towersUpdate();
     }
     public void play() {
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        gamePanel.loseHealth(5);
         ActionListener actionListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

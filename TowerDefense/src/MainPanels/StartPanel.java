@@ -17,12 +17,13 @@ public class StartPanel extends JPanel {
                  repaint();
             }
         };
+        Model.addSound("sound/StartSound.wav");
+        Model.loopSound();
 
         Timer critterTimer = new Timer(300, critterTListener);
         critterTimer.setRepeats(true);
         critterTimer.start();
     }
-
     protected void paintComponent(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
 

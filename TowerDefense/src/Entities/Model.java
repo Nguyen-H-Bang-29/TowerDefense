@@ -24,6 +24,7 @@ public abstract class Model {
     public static List<Bullet> bullets = new ArrayList<>();
 
     public static Clip clip;
+    public static boolean isRunning = false;
 
     public enum towerTypes{
         basic,

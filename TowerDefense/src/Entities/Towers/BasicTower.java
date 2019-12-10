@@ -11,7 +11,7 @@ public class BasicTower extends Tower {
         this.damage = 100;
         this.reloadTime = 0.5;
         this.lastShotTime = 0;
-        this.range = 175;
+        this.range = 200;
         this.img = "graphics/BasicTower.png";
     }
 
