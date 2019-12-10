@@ -103,8 +103,8 @@ public class Window extends JFrame implements MouseListener {
             add(boardPanel);
         } else if (x > 695 && x < 780 && y > 15 && y < 45){
             isRunning = true;
-            Model.addSound("sound/SoundTrack.wav");
-            Model.loopSound();
+//            Model.addSound("sound/SoundTrack.wav");
+//            Model.loopSound();
         }
         else gamePanel.unselectTower();
     }
@@ -157,11 +157,16 @@ public class Window extends JFrame implements MouseListener {
                                 int x = e.getX();
                                 int y = e.getY();
                                 if (265 < x && x < 540 && 410 < y && y < 480){
+                                    Model.towers.clear();
+                                    Model.critters.clear();
                                     getContentPane().removeAll();
                                     getContentPane().repaint();
-
+                                    Model.score = 0;
+                                    Model.gold = 100;
+                                    Model.health = 100;
                                     add(gamePanel);
                                     add(boardPanel);
+                                    isRunning = true;
                                 }
                             }
                         });
@@ -213,17 +218,19 @@ public class Window extends JFrame implements MouseListener {
         ActionListener critterTListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isRunning) {
+                if(isRunning && Model.critters.size() <= 10) {
                     Model.critters.add(new BasicCritter(Model.xEntrance, Model.yEntrance));
                     Random random = new Random();
                     switch (random.nextInt()%2){
-                        case 1:
-                            Model.critters.add(new Critter2(Model.xEntrance, Model.yEntrance));
-                            break;
                         case 0:
                             Model.critters.add(new Critter3(Model.xEntrance, Model.yEntrance));
                             break;
 
+                        case 1:
+                            Model.critters.add(new Critter2(Model.xEntrance, Model.yEntrance));
+                            break;
+                        default:
+                            break;
                     }
                 }
             }

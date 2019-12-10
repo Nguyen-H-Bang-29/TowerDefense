@@ -35,7 +35,7 @@ public class GamePanel extends JPanel {
 
         basicTowerDes = Model.loadTextLabel( "<html>Cost: 50$<br>Range: 175<br>Damage: 100<br>Reload: 0.5s</html>" ,90, 200, 75, 75);
         freezerTowerDes = Model.loadTextLabel("<html>Cost: 75$<br>Range: 200<br>Damage: 150<br>Reload: 1.5s</html>", 90, 300, 75, 75);
-        sniperTowerDes = Model.loadTextLabel("<html>Cost: 100$<br>Range: 230<br>Damage: 200<br>Reload: 2.5s</html>", 90, 400, 75, 75);
+        sniperTowerDes = Model.loadTextLabel("<html>Cost: 100$<br>Range: 250<br>Damage: 200<br>Reload: 2.5s</html>", 90, 400, 75, 75);
 
         score = Model.loadTextLabel("Score: " + Model.score, 50, 480, 150 , 20);
         score.setFont(score.getFont().deriveFont((float) 20));
@@ -167,10 +167,9 @@ public class GamePanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         this.removeAll();
-
+        this.add(healthBar);
         this.add(goldIcon);
         this.add(goldOwned);
-        this.add(healthBar);
         this.add(basicTowerIcon);
         this.add(freezerTowerIcon);
         this.add(sniperTowerIcon);
