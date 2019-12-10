@@ -132,10 +132,13 @@ public class GamePanel extends JPanel {
                 tower = new Tower3(xTilePos, yTilePos);
                 n = 3;
                 break;
+            case shovel: 
+                sellTower(xTilePos, yTilePos);
+                break;
             default:
                 tower = null;
         }
-        unselectTower();
+        unselectTower();        
         if(tower != null && Model.gold >= tower.price && Model.mapMatrix[yTilePos][xTilePos] == 0) {
             Model.mapMatrix[yTilePos][xTilePos] = 2;
             Model.towers.add(tower);
@@ -143,12 +146,16 @@ public class GamePanel extends JPanel {
         }
     }
     public void sellTower(int xTilePos, int yTilePos){
+        Tower tower;
         if (selectedTower == Model.towerTypes.shovel) {
-            for (int i=0; i<Model.towers.size(); i++){
+            for (int i=0; i < Model.towers.size(); i++){
                 if (xTilePos == Model.towers.get(i).xTilePos && yTilePos == Model.towers.get(i).yTilePos){
-                    Model.towers.remove(Model.towers.get(i));
+                    tower = Model.towers.get(i);
                 }
             }
+            Model.mapMatrix[yTilePos][xTilePos] = 0;
+            Model.towers.remove(tower);
+            updateGold(tower.price/2);
         }
     }
     @Override
