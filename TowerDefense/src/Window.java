@@ -14,10 +14,12 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Window extends JFrame implements MouseListener {
     boolean isRunning = false;
@@ -75,24 +77,26 @@ public class Window extends JFrame implements MouseListener {
     public void mouseClicked(MouseEvent e) {
         int x = e.getX() - 7;
         int y = e.getY() - 30;
-
+        System.out.println(x);
+        System.out.println(y);
         if(x > 610 && x < 685 && y > 200 && y < 275) {
             if (gamePanel.selectedTower != null) gamePanel.unselectTower();
             gamePanel.selectTower(Model.towerTypes.basic);
-        }
-        else if(x > 610 && x < 685 && y > 300 && y < 375) {
+        } else if(x > 610 && x < 685 && y > 300 && y < 375) {
             if (gamePanel.selectedTower != null) gamePanel.unselectTower();
             gamePanel.selectTower(Model.towerTypes.freezer);
-        }
-        else if(x > 610 && x < 685 && y > 400 && y < 475) {
+        } else if(x > 610 && x < 685 && y > 400 && y < 475) {
             if (gamePanel.selectedTower != null) gamePanel.unselectTower();
             gamePanel.selectTower(Model.towerTypes.sniper);
-        }
+        } else if (x > 650 && x < 720 && y > 520 && y < 585){
+            if (gamePanel.selectedTower != null) gamePanel.unselectTower();
+            gamePanel.selectTower(Model.towerTypes.shovel);
 
-        else if(x < 600 && x > 0 && y < 600 && y > 0 && gamePanel.selectedTower != null){
+        } else if(x < 600 && x > 0 && y < 600 && y > 0 && gamePanel.selectedTower != null){
             gamePanel.buyTower(x/75, y/75);
-        }
-        else gamePanel.unselectTower();
+        } else if (x < 600 && x > 0 && y < 600 && y > 0){
+            gamePanel.sellTower(x/75, y/75);
+        } else gamePanel.unselectTower();
     }
 
     @Override
@@ -134,17 +138,40 @@ public class Window extends JFrame implements MouseListener {
                     if(Model.health <= 0) {
                         Model.stopSound();
                         Model.addSound("sound/GameOver.wav");
-                        JDialog lostDialog = new JDialog();
-                        JLabel message = new JLabel("Your Score: " + Model.score);
-                        lostDialog.add(message);
 
                         isRunning = false;
-                        lostDialog.setDefaultCloseOperation(HIDE_ON_CLOSE);
-                        lostDialog.setBounds(300, 250, 200, 100);
-                        lostDialog.setVisible(true);
+//                        Model.bullets = null;
+//                        Model.critters = null;
+//                        Model.towers = null;
+//                        Model.score = 0;
+//                        Model.mapMatrix = new int[8][8];
+//                        Model.clip = null;
+//                        Model.mapRenderMatrix = new Image[8][8];
+//                        Model.xEntrance = 0;
+//                        Model.yEntrance = 0;
+//                        Model.gold = 100;
+//                        Model.health = 100;
+//                        Model.xExit = 0;
+//                        Model.yExit =0;
+
                         getContentPane().removeAll();
                         getContentPane().repaint();
                         add(endPanel);
+
+                        addMouseListener(new MouseAdapter() {
+                            public void mousePressed(MouseEvent e){
+                                int x = e.getX();
+                                int y = e.getY();
+                                if (265 < x && x < 540 && 410 < y && y < 480){
+                                    isRunning = true;
+                                    getContentPane().removeAll();
+                                    getContentPane().repaint();
+                                    add(gamePanel);
+                                    add(boardPanel);
+                                }
+                            }
+                        });
+
                     }
                     removedList.add(critter);
                 }
@@ -196,8 +223,16 @@ public class Window extends JFrame implements MouseListener {
             public void actionPerformed(ActionEvent e) {
                 if(isRunning) {
                     Model.critters.add(new BasicCritter(Model.xEntrance, Model.yEntrance));
-                    Model.critters.add(new Critter2(Model.xEntrance, Model.yEntrance));
-                    Model.critters.add(new Critter3(Model.xEntrance, Model.yEntrance));
+                    Random random = new Random();
+                    switch (random.nextInt()%2){
+                        case 1:
+                            Model.critters.add(new Critter2(Model.xEntrance, Model.yEntrance));
+                            break;
+                        case 0:
+                            Model.critters.add(new Critter3(Model.xEntrance, Model.yEntrance));
+                            break;
+
+                    }
                 }
             }
         };

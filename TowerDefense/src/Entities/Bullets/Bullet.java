@@ -17,6 +17,7 @@ abstract public class Bullet {
     public int damage;
     public double timeShot;
     public boolean isOnAir;
+    public boolean isFreezer = false;
 
     Bullet(Tower source, Critter target) {
         this.target = target;
@@ -32,6 +33,26 @@ abstract public class Bullet {
     }
 
     public void hitTarget() {
+        target.timeShot = System.currentTimeMillis();
+        if(isFreezer) {
+            if(!target.isFrozen) {
+                target.isFrozen = true;
+                target.speed /= 2;
+
+                if (target.theta == Math.PI / 2) {
+                    target.img = target.frozenImg1;
+                } // east
+                else if (target.theta == Math.PI) {
+                    target.img = target.frozenImg2;
+                } // south
+                else if (target.theta == -Math.PI / 2) {
+                    target.img = target.frozenImg3;
+                } // west
+                else if (target.theta == 0) {
+                    target.img = target.frozenImg4;
+                } // north
+            }
+        }
         target.health -= damage;
         isOnAir = false;
     }

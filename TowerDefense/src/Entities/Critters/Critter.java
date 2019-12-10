@@ -7,7 +7,7 @@ public abstract class Critter {
     public boolean reachTarget = false;
 
     public int damage;
-    public int speed;
+    public double speed;
     public int health;
     public double theta;
     public int reward;
@@ -18,6 +18,9 @@ public abstract class Critter {
     public int stepCount = 0;
     public String eastImg2, eastImg4;
     public String southImg3, southImg1;
+    public String frozenImg1, frozenImg2, frozenImg3, frozenImg4;
+    public double timeShot;
+    public boolean isFrozen = false;
 
     private void updatePos() {
         if (theta == Math.PI / 2) {
@@ -131,6 +134,12 @@ public abstract class Critter {
     public void update() {
         updatePos();
         updateHealth();
+        if (isFrozen) {
+            if(System.currentTimeMillis() - timeShot > 700){
+                isFrozen = false;
+                speed *= 2;
+            }
+        }
         if (isColliding()) handleCollision();
     }
 }

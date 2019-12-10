@@ -28,7 +28,8 @@ public abstract class Model {
     public enum towerTypes{
         basic,
         freezer,
-        sniper
+        sniper,
+        shovel
     }
     public static Image loadImage(String path) {
         Image img;
@@ -71,13 +72,6 @@ public abstract class Model {
         label.setLocation(x, y);
         return label;
     }
-    public static JButton loadIconButton (String text, int x, int y, int w, int h){
-        JButton button = new JButton(text);
-        button.setSize(w, h);
-
-        button.setLocation(x, y);
-        return button;
-    }
 
     public static JLabel loadIconLabel(String path, int x, int y, int width, int height){
         JLabel label = new JLabel(new ImageIcon(path));
@@ -90,6 +84,4 @@ public abstract class Model {
     public static int health = 100;
     public static int gold = 100;
     public static int score = 0;
-    public static double lastUpdateGold;
-
 }

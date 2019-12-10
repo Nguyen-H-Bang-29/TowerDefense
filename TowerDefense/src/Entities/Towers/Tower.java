@@ -1,5 +1,6 @@
 package Entities.Towers;
 
+import Entities.Bullets.Bullet;
 import Entities.Critters.Critter;
 import Entities.Model;
 
